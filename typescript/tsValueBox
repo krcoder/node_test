@@ -1,0 +1,31 @@
+// 기본 변수선언 방법
+let human_name : string = 'kim'
+let array_name : string[] = ['apple', 'banana']
+let object_name :{ name : string, age? : number } = { name : 'angle' }
+let human_number :string | number = 123;
+
+// 무조건 넘버를 받고, 무조건 넘버를 리턴해줘야 하는 함수
+function func(x :number) :number {
+    
+
+    return x * 2
+}
+
+// 튜플타입
+type Member = [number, boolean]
+let john :Member = [123, true]
+
+// DTO
+type jsonDTO ={
+    // 글자로 된 모든 object 속성의 타입은 : string
+    [key :string] : string    
+}
+
+// class문법
+class User {
+    school_name :string
+    constructor(school_name){
+        this.school_name = school_name
+    }
+}
+
